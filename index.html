@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#@?!*#!</title>
+
+    <!--favicon-img--> 
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!--favicon-img-->
+
+    <!-- SWIPER CSS LINK -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+    <!-- SWIPER CSS LINK -->
+    
+    <!-- GSAP JS LINK -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!-- GSAP JS LINK -->
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS LINK -->
+
+
+</head>
+<body>
+
+    <!-- ALL CONTENTS -->
+
+    <main id="all">
+
+
+        <!--------------- LOADER--------------->
+
+        <div id="loader">
+
+
+            <!-- LOADER TEXT -->
+
+            <div class="loader-text-stroke"> ♥&nbsp;
+                <div class="loader-text"> ♥&nbsp; </div>
+            </div>
+            <!-- LOADER TEXT -->
+
+        </div>
+
+        <!--------------- LOADER --------------->
+
+
+
+        <!-- BREAKER (SCREEN THAT DISPLAYS ON LINKS CLICK) -->
+
+        <div id="breaker">
+        </div>
+
+
+        <!-- BREAKER (SCREEN THAT DISPLAYS ON LINKS CLICK) -->
+
+
+
+
+        <!--------------- CURSOR --------------->
+        <div class="cursor"></div>
+        <div class="cursor-two"></div>
+        <!-- -------------CURSOR --------------->
+
+
+        <!--------------------- HOME PAGE --------------------->
+
+        <div id="home">
+           
+            <body>
+                <div class="navod">Heslo seskládáš z číslic na krabici. Jedná se o datum ve tvaru DDMMRRRR.</div>
+                   <input type="password" placeholder="heslo" id="tutorial">
+                   <button onclick="protectpasscode()">pokračovat ▶</button>
+                   <script>
+                      function protectpasscode() {
+                         const result = document.getElementById("tutorial").value;
+                         let passcode = 12345;
+                         let space = '';
+                         if (result == space) {
+                            alert("Nezadala jsi žádné heslo!")
+                         } else {
+                            if (result == passcode) {
+                               location.href = 'websites/homepage.html';
+                            } else {
+                               alert("Špatné heslo! Zkus to znovu :)");
+                               location.reload();
+                            }
+                         }
+                      }
+                   </script>
+             </body>
+
+        </div>
+
+        <!--------------------- HOME PAGE --------------------->
+
+        
+        
+
+    </main>
+
+    <!-- ALL CONTENTS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/index.js"></script>
+    
+
+</body>
+</html>
