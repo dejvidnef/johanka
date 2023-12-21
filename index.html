@@ -37,8 +37,8 @@
 
             <!-- LOADER TEXT -->
 
-            <div class="loader-text-stroke"> ♥&nbsp;
-                <div class="loader-text"> ♥&nbsp; </div>
+            <div class="loader-text-stroke"> ♡&nbsp;
+                <div class="loader-text"> ♡&nbsp; </div>
             </div>
             <!-- LOADER TEXT -->
 
@@ -70,13 +70,13 @@
         <div id="home">
            
             <body>
-                <div class="navod">Heslo seskládáš z číslic na krabici. Jedná se o datum ve tvaru DDMMRRRR.</div>
+                <div class="navod">heslo je šestimístný pin. seskládáš ho pomocí hesla a případných nápověd na krabici.</div>
                    <input type="password" placeholder="heslo" id="tutorial">
                    <button onclick="protectpasscode()">pokračovat ▶</button>
                    <script>
                       function protectpasscode() {
                          const result = document.getElementById("tutorial").value;
-                         let passcode = 12345;
+                         let passcode = 143637;
                          let space = '';
                          if (result == space) {
                             alert("Nezadala jsi žádné heslo!")
