@@ -70,8 +70,8 @@
         <div id="home">
            
             <body>
-                <div class="navod">heslo je šestimístný pin. seskládáš ho pomocí hesla a případných nápověd na krabici.</div>
-                   <input type="password" placeholder="heslo" id="tutorial">
+                <div class="navod">6místný pin seskládáš pomocí hesla a nápovědy na krabici. </div>
+                   <input type="password" placeholder="pin" id="tutorial">
                    <button onclick="protectpasscode()">pokračovat ▶</button>
                    <script>
                       function protectpasscode() {
@@ -79,13 +79,13 @@
                          let passcode = 143637;
                          let space = '';
                          if (result == space) {
-                            alert("Nezadala jsi žádné heslo!")
+                            alert("Nezadala jsi žádné heslo :(")
                          } else {
                             if (result == passcode) {
+                                alert("Šikulka! :)")
                                location.href = 'websites/homepage.html';
                             } else {
                                alert("Špatné heslo! Zkus to znovu :)");
-                               location.reload();
                             }
                          }
                       }
